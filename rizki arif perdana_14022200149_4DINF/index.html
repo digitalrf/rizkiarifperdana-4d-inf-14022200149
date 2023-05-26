@@ -1,0 +1,179 @@
+  <!-- rizky arif perdana- 4D INF- 14022200149 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+   <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+ <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700'>
+<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style.css">
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+<!-- Preloader -->
+    <div id="preloader">
+      <div id="container" class="container-preloader">
+        <div class="animation-preloader">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+  </div>
+        </div>  
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    </div>  
+
+</a>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+  <!-- jQuery UI 1.11.4 -->
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button)
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ChartJS -->
+  <script src="plugins/chart.js/Chart.min.js"></script>
+  <!-- Sparkline -->
+  <script src="plugins/sparklines/sparkline.js"></script>
+  <!-- JQVMap -->
+  <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Summernote -->
+  <script src="plugins/summernote/summernote-bs4.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="dist/js/pages/dashboard.js"></script>
+
+  <title>AdminLTE 3 | Dashboard</title>
+</head> 
+
+<body>
+
+  <nav class="navbar  navbar-expand-lg navbar-dark bg-dark ">
+    <a class="navbar-brand" href="#"><h2><b><img src="blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" width="154" height="20"></b></h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            Movies
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" position fixed>
+          <a class="category-link current" href="#" onclick="sortMovies('popularity')">
+       
+             <div class="genre">Populer</div>
+
+      </a>
+      <a class="category-link" href="#" onclick="sortMovies('rating')">
+
+        <div class="genre">Rating Tertinggi</div> <''
+      </a>
+      <a class="category-link" href="#" onclick="sortMovies('grossing')">
+        <div class="genre">Grossing</div>
+      </a>
+        </li>
+         
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            TV Shows
+          </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="category-link current" href="#" onclick="sortMovies('popularity')">
+            <a class="nav-link" href="#">
+        <div class="genre">Populer</div>
+      </a>
+      <a class="category-link" href="#" onclick="sortMovies('rating')">
+        <div class="genre">Rating Tertinggi</div> <''
+      </a>
+      <a class="category-link" href="#" onclick="sortMovies('grossing')">
+        <div class="genre">Grossing</div>
+      </a>
+        </li>
+         
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            People
+          </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="category-link current" href="#" onclick="sortMovies('popularity')">
+        <div class="genre">Populer</div>
+      </a>
+        </li>
+         
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        
+      </ul>
+      <form class="search-form"><button type="submit" class="search-button"><i class="fa fa-search"></i></button><input id="search" onKeyPress="return checkSubmit(event)" type="search" placeholder="&nbsp;Cari Film Disini..." class="search-input" value=""></form>
+</div>
+  </nav>
+
+<div class="bigpic">
+  <span class="bigletters">Selamat Datang</span>
+
+</div>
+<div class="content">
+    <div class="inner-container">
+      <div class="titles">
+        <h1 id="list-item-1"> .</h1>
+        <h2 id="scrollspyHeading1"> </h2>
+      </div>
+      <div class="item-container">
+      </div>
+      <div class="load-more"><i class="fa fa-plus-circle more" aria-hidden="true"></i></div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</html>
